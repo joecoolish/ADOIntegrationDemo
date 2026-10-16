@@ -1,7 +1,7 @@
 # ADOIntegrationDemo
 
 **Little Works** is a fictional toy manufacturer's responsive demo website, and a
-sample project for exploring Azure DevOps (ADO) and GitHub integration. (Testing now)
+sample project for exploring Azure DevOps (ADO) and GitHub integration. (Testing done)
 
 ## Run locally
 
