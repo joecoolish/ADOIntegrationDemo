@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Little Works: a fictional workshop making colorful wooden toys for big imaginations. Explore our toy manufacturing demo.">
+  <title>Little Works — Small toys. Big possibilities.</title>
+  <link rel="icon" href="assets/toys.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">A little imagination goes a long way. <span>Meet your next shelf favorite ↓</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Little Works home"><span class="brand-icon" aria-hidden="true">✳</span> little works<span class="brand-period">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#collection">Our toys</a>
+      <a href="#process">How we make them</a>
+      <a href="#about">Our story</a>
+    </nav>
+    <button class="basket-button" id="open-basket" type="button">Sample basket <span id="basket-count">0</span></button>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-dot"></span> BUILT FOR LITTLE EXPLORERS</p>
+        <h1 id="hero-title">Small toys.<br>Big <em>possibilities.</em></h1>
+        <p class="hero-description">A world of wonder, made by hand. Thoughtfully designed wooden toys that turn everyday play into extraordinary adventures.</p>
+        <a class="button primary" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="mini-star" aria-hidden="true">✦</span> Less screen time. More “one more time.”</div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/workshop.svg" alt="Illustrated wooden robot, rainbow stacker, and toy train on a sunny workshop shelf" width="640" height="520">
+        <span class="art-label">A little play. A lot of heart.</span>
+        <span class="round-stamp" aria-hidden="true">MADE FOR<br><strong>play</strong><br>NOT A DISPLAY</span>
+      </div>
+    </section>
+    <div class="values-strip" aria-label="Our design principles">
+      <span><b aria-hidden="true">♧</b> Thoughtful materials</span>
+      <span><b aria-hidden="true">✧</b> Big on imagination</span>
+      <span><b aria-hidden="true">♡</b> Designed to be loved</span>
+      <span><b aria-hidden="true">☀</b> A little joy, every day</span>
+    </div>
+    <section id="collection" class="collection section" aria-labelledby="collection-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE PLAYROOM EDIT</p><h2 id="collection-title">Good things come in <em>small packages.</em></h2></div>
+        <p>Meet the little things that make<br>their world a little bigger.</p>
+      </div>
+      <div class="catalogue-toolbar">
+        <div class="filters" role="group" aria-label="Filter toys by category">
+          <button type="button" class="filter active" data-category="all" aria-pressed="true">All toys</button>
+          <button type="button" class="filter" data-category="Builders" aria-pressed="false">Little builders</button>
+          <button type="button" class="filter" data-category="Explorers" aria-pressed="false">Big explorers</button>
+          <button type="button" class="filter" data-category="Dreamers" aria-pressed="false">Daydreamers</button>
+        </div>
+        <div class="catalogue-controls">
+          <label class="search-label"><span class="sr-only">Search toys</span><input id="search" type="search" placeholder="Find a little wonder…"></label>
+          <label><span class="sr-only">Sort toys</span><select id="sort"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Name: A–Z</option></select></label>
+        </div>
+      </div>
+      <p id="results-count" class="results-count" role="status"></p>
+      <noscript><p>Please enable JavaScript to browse the interactive catalogue and sample basket. This is a front-end demo; no orders are taken.</p></noscript>
+      <div id="products" class="product-grid"></div>
+      <p id="empty-state" class="empty-state" hidden>No little wonders found. Try another search or category.</p>
+      <p class="catalogue-note">Illustrative USD retail prices · Sample requests are simulated · Ages are fictional product data, not safety certifications</p>
+    </section>
+    <section id="process" class="process section" aria-labelledby="process-title">
+      <div class="process-intro"><p class="eyebrow">FROM OUR WORKSHOP TO THEIR WORLD</p><h2 id="process-title">A thoughtful process.<br>A playful result.</h2><p>Good play starts long before the playroom. Here’s how we imagine bringing every Little Works toy to life.</p><span class="process-doodle" aria-hidden="true">✳</span></div>
+      <ol class="process-steps">
+        <li><span>01</span><div><h3>Dream it up</h3><p>We start with a simple question: what could a little imagination do with this?</p></div></li>
+        <li><span>02</span><div><h3>Make it thoughtfully</h3><p>Wooden shapes, cheerful colors, and little details designed for open-ended adventures.</p></div></li>
+        <li><span>03</span><div><h3>Let play lead the way</h3><p>Build, tumble, rearrange, repeat. The best part of the story is the part they invent.</p></div></li>
+      </ol>
+    </section>
+    <section id="about" class="about section" aria-labelledby="about-title">
+      <p class="eyebrow">HELLO, WE’RE LITTLE WORKS</p><h2 id="about-title">Serious about making.<br><em>Not-so-serious about everything else.</em></h2>
+      <p>We’re a fictional toy workshop with a real belief: simple things can spark wonderful ideas. This demo imagines a small manufacturer partnering with independent shops, curious families, and the next generation of big thinkers.</p>
+      <button class="button primary" id="open-quote" type="button">Let’s make room for play <span aria-hidden="true">↗</span></button>
+    </section>
+  </main>
+  <footer>
+    <a class="brand" href="#">✳ little works.</a>
+    <p>A demo made for big imaginations. Not a real shop.</p>
+    <a href="https://github.com/joelday-demos/ADOIntegrationDemo/tree/main/docs/wiki">Developer Wiki ↗</a>
+  </footer>
+  <dialog id="quote-dialog" aria-labelledby="quote-title">
+    <div class="dialog-heading"><h2 id="quote-title">Your little wish list</h2><button id="close-dialog" class="icon-button" type="button" aria-label="Close sample basket">×</button></div>
+    <p>Explore a sample request. This demo does not send, save, or fulfill requests. Please use fictional contact details.</p>
+    <ul id="basket-items" class="basket-items"></ul>
+    <p id="basket-total" class="basket-total"></p>
+    <form id="quote-form">
+      <label>Your name <input name="name" autocomplete="off" required maxlength="100" placeholder="Alex Example"></label>
+      <label>Email <input name="email" type="email" autocomplete="off" required maxlength="254" placeholder="alex@example.com"></label>
+      <button class="button primary" type="submit">Preview sample request <span aria-hidden="true">↗</span></button>
+    </form>
+    <p id="quote-status" role="status"></p>
+  </dialog>
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>
